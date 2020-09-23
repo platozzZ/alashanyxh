@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "文章详情",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

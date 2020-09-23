@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.inputorder2-1 .p-step1-cars {
+  padding-bottom: 64rpx;
+  position: relative;
+}
+.inputorder2-1 .p-step1-cars::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 120rpx);
+  left: -60rpx;
+  height: 14rpx;
+  background-color: #ECECEC;
+}
+.inputorder2-1 .p-step1-cars .p-step1-title {
+  font-size: 12px;
+  color: #262626;
+  margin-bottom: 10rpx;
+}
+.inputorder2-1 .p-step1-cars .radio-group .radio-item {
+  position: relative;
+  height: 80rpx;
+  border-radius: 30rpx;
+  border: 1rpx solid #E9E9E9;
+  padding: 0;
+  color: #A7A7A7;
+}
+.inputorder2-1 .p-step1-cars .radio-group .radio-item.active {
+  background-color: #EA5A5C;
+  border-color: #EA5A5C;
+  color: #fff;
+}
+.inputorder2-1 .p-step1-cars .radio-group .radio-item radio {
+  display: none;
+}
+.inputorder2-1 .p-step1-cars .p-step1-picker {
+  border: 1px solid #E9E9E9;
+  border-radius: 30rpx;
+  height: 90rpx;
+  font-size: 24rpx;
+  color: #A7A7A7;
+  padding: 0 40rpx;
+}
+.inputorder2-1 .p-step1-cars .p-step1-picker text {
+  font-size: 34rpx;
+}
+.inputorder2-1 .p-list {
+  padding: 50rpx 0;
+}
+.inputorder2-1 .p-list .p-list-title {
+  font-size: 24rpx;
+  color: #262626;
+  margin-bottom: 10rpx;
+}
+.inputorder2-1 .p-list .p-item {
+  position: relative;
+  color: #A7A7A7;
+  width: 100%;
+  height: 90rpx;
+  padding: 0 40rpx;
+  font-size: 24rpx;
+  border: 1px solid #E9E9E9;
+  border-radius: 30rpx;
+  margin-bottom: 30rpx;
+}
+.inputorder2-1 .p-list .p-item:last-child {
+  margin: 0;
+}
+.inputorder2-1 .p-list .p-item input {
+  min-height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 20rpx;
+}
+.inputorder2-1 .p-list .p-item .p-required {
+  position: relative;
+  font-size: 44rpx;
+  color: #818181;
+  height: 40rpx;
+  line-height: 54rpx;
+  text-align: right;
+}
+.inputorder2-1 .p-list .p-item .p-item-btn {
+  background: #616161;
+  border-radius: 22rpx;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 18rpx 24rpx;
+}
+.inputorder2-1 .p-list .p-item .p-item-btn.bg-gray {
+  background-color: rgba(97, 97, 97, 0.5);
+}
+.inputorder2-1 .p-step-bot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-size: 40rpx;
+  text-align: center;
+  height: calc(120rpx + constant(safe-area-inset-bottom) / 2);
+  height: calc(120rpx + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(constant(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+  background-color: #fff;
+}
+.inputorder2-1 .p-step-bot .p-btn-prev {
+  width: 160rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 46rpx;
+  color: #fff;
+  background: #000;
+}
+.inputorder2-1 .p-step-bot .p-btn-submit {
+  font-size: 40rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #FFFFFF;
+  background: #EA5A5C;
+  border-radius: 0;
+}
+.inputorder2-1 .p-step-bot .p-btn-submit::after {
+  display: none;
+}
+.inputorder2-1 .step-bottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #FF7A22;
+  line-height: 120rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+}
+.inputorder2-1 .introduce-bg {
+  font-size: 20rpx;
+  color: #757575;
+  line-height: 32rpx;
+}
+.inputorder2-1 .introduce-bg .intro-one {
+  margin-bottom: 20rpx;
+}
+.inputorder2-1 .club-bg {
+  font-size: 32rpx;
+  line-height: 98rpx;
+  text-align: center;
+  color: #FF7A22;
+  background: url(https://enroll-api.activitysign.com/3/images/daiduibeijing.png) no-repeat center center;
+  background-size: 558rpx 98rpx;
+}
+.inputorder2-1 .input-bg .input-one .label {
+  font-size: 24rpx;
+  color: #a7a7a7;
+  padding: 28rpx 0 10rpx;
+}
+.inputorder2-1 .input-bg .input-one .input-cont {
+  height: 98rpx;
+  width: 100%;
+  border: 1px solid #F2F2F2;
+  border-radius: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.inputorder2-1 .input-bg .input-one .input-cont .input {
+  padding: 25rpx;
+  line-height: 48rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 30rpx;
+  color: #333;
+}
+.inputorder2-1 .input-bg .input-one .input-cont .star {
+  font-size: 48rpx;
+  line-height: 98rpx;
+  color: #818181;
+  width: 80rpx;
+  text-align: center;
+}
+

@@ -1,0 +1,1 @@
+<view class="apply"><view style="background-color:#ff0000;"><rich-text nodes="{{apply}}"></rich-text></view></view>

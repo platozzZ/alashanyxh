@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "报名",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "sd-tabbar": "/components/sd-tabbar/sd-tabbar"
+  }
+}

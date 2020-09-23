@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "match-step-addcar": "/components/match-step-addcar/match-step-addcar"
+  },
+  "component": true
+}

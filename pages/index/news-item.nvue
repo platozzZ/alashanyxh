@@ -1,0 +1,230 @@
+<template>
+	<!-- remove list-cell layer fix android 4.x overflow limit error: 28 layers! -->
+	<!-- <view class="list-cell view" @click="click"></view> -->
+	<view class="media-item view" hover-class="media-item-hover" v-if="options.title" @click="click">
+		<!-- <view class="view" :style="options.nimages_type === 2 ? 'flex-direction: row';" :class="{'media-image-right': options.nimages_type === 2, 'media-image-left': options.nimages_type === 1}"> -->
+		<!-- TODO 在支付宝小程序下 需要用 style 覆盖标签的默认样式 -->
+		
+		<!-- id: 165
+		nauthor: "小青青影像"
+		nftitle: "山地英雄会 “4X4 PARK”中国无限四驱公开赛活动规划"
+		nimages: "http://cms-web.fblife.com/uploads/images/202008/newscover_4_1_0_f34b3f9e84c2.jpg"
+		nimages_type: 1
+		nsendtime: "2020-08-09 23:37:36"
+		ntitle: "山地英雄会 “4X4 PARK”中国无限四驱公开赛活动规划"
+		photo: "http://cms-web.fblife.com/uploads/images/202006/carouselfigure_4ee467821c610.jpg"
+		plato_id: "E72B4A20-F021-444F-F230-DF0666603D0E" -->
+		<view class="view" :style="{flexDirection: (options.nimages_type === 1 || options.nimages_type === 2)?(options.nimages_type === 2 ?'row':'row-reverse'):'column' }">
+			<view class="" style="flex: 1" :style="{flexDirection: (options.nimages_type === 1 || options.nimages_type === 2)?'column':''}">
+				<view class="media-title text-ellipsis" :class="{'media-title2': options.nimages_type === 1 || options.nimages_type === 2}">
+					{{options.ntitle}}
+				</view> 
+				<view class="media-info flex-row" style="flex-direction: row;" v-if="options.nimages_type === 1 || options.nimages_type === 2" >
+					<text class="info-text">{{options.source}}</text>
+					<text class="info-text">{{options.comment_count}}条评论</text>
+					<text class="info-text">{{options.datetime}}</text>
+				</view>
+			</view>
+			<view v-if="options.image_list || options.image_url" class="image-section flex-row" :class="{'image-section-right': options.nimages_type === 2, 'image-section-left': options.nimages_type === 1}"
+			 :style="{flexDirection: 'row' }">
+				<image class="image-list1" :class="{'image-list2': options.nimages_type === 1 || options.nimages_type === 2}" v-if="options.image_url"
+				 :src="options.image_url"></image>
+				<image class="image-list3" v-if="options.image_list" :src="source.url" v-for="(source, i) in options.image_list"
+				 :key="i" />
+			</view>
+		</view>
+		<view class="media-foot flex-row" style="flex-direction: row;" v-if="options.nimages_type != 1 && options.nimages_type != 2">
+			<view class="media-info flex-row" style="flex-direction: row;">
+				<text class="info-text">{{options.source}}</text>
+				<text class="info-text">{{options.comment_count}}条评论</text>
+				<text class="info-text">{{options.datetime}}</text>
+			</view>
+			<!-- <view class="max-close-view" @click.stop="close">
+				<view class="close-l close-h"></view>
+				<view class="close-l close-v"></view>
+			</view> -->
+		</view>
+		<view class="media-item-line" style="position: absolute;"></view>
+	</view>
+</template>
+
+<script>
+	export default {
+		props: {
+			options: {
+				type: Object,
+				default: function(e) {
+					return {}
+				}
+			}
+		},
+		mounted() {
+			console.log(this.options);
+		},
+		methods: {
+			click() {
+				this.$emit('click');
+			},
+			close(e) {
+				this.$emit('close');
+			}
+		}
+	}
+</script>
+
+<style scoped>
+	view{
+		display: flex;
+	}
+	.view {
+		flex-direction: column;
+	}
+
+	.flex-row {
+		flex-direction: row;
+	}
+
+	.flex-col {
+		flex-direction: column;
+	}
+
+	.list-cell {
+		width: 750rpx;
+		padding: 0 30rpx;
+	}
+
+	.uni-list-cell-hover {
+		background-color: #eeeeee;
+	}
+
+	.media-item {
+		position: relative;
+		flex: 1;
+		flex-direction: column;
+		/* border-bottom-width: 1rpx;
+		border-bottom-style: solid;
+		border-bottom-color: #ebebeb; */
+		padding: 20rpx 30rpx 21rpx 30rpx;
+	}
+
+    .media-item-hover{
+        background-color: #eee;
+    }
+
+	.media-item-line {
+		position: absolute;
+		left: 30rpx;
+		right: 30rpx;
+		bottom: 0;
+		height: 1rpx;
+		background-color: #ebebeb;
+	}
+
+	.media-image-right {
+		flex-direction: row;
+	}
+
+	.media-image-left {
+		flex-direction: row-reverse;
+	}
+
+	.media-title {
+		flex: 1;
+	}
+
+	.media-title {
+		/* lines: 3; */
+		text-overflow: ellipsis;
+		font-size: 36rpx;
+		color: #000;
+	}
+
+	.media-title2 {
+		flex: 1;
+		margin-top: 6rpx;
+		line-height: 40rpx;
+	}
+
+	.image-section {
+		margin-top: 20rpx;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.image-section-right {
+		margin-top: 0rpx;
+		margin-left: 10rpx;
+		width: 225rpx;
+		height: 146rpx;
+	}
+
+	.image-section-left {
+		margin-top: 0rpx;
+		margin-right: 10rpx;
+		width: 225rpx;
+		height: 146rpx;
+	}
+
+	.image-list1 {
+		width: 690rpx;
+		height: 481rpx;
+	}
+
+	.image-list2 {
+		width: 225rpx;
+		height: 146rpx;
+	}
+
+	.image-list3 {
+		width: 225rpx;
+		height: 146rpx;
+	}
+
+	.media-info {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.info-text {
+		margin-right: 20rpx;
+		color: #999999;
+		font-size: 24rpx;
+	}
+
+	.media-foot {
+		margin-top: 25rpx;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.max-close-view {
+		position: relative;
+		align-items: center;
+		flex-direction: row;
+		width: 40rpx;
+		height: 30rpx;
+		line-height: 30rpx;
+		border-width: 1rpx;
+		border-style: solid;
+		border-color: #aaaaaa;
+		border-radius: 4px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.close-l {
+		position: absolute;
+		width: 18rpx;
+		height: 1rpx;
+		background-color: #aaaaaa;
+	}
+
+	.close-h {
+		transform: rotate(45deg);
+	}
+
+	.close-v {
+		transform: rotate(-45deg);
+	}
+</style>

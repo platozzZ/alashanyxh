@@ -1,0 +1,170 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/enter/enter",
+			"style": {
+				"navigationBarTitleText": "报名",
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": "white"
+			}
+		},{
+			"path": "pages/enroll/enroll",
+			"style": {
+				"navigationBarTitleText": "活动",
+				"enablePullDownRefresh": true
+			}
+		},{
+			"path": "pages/mall/mall",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/index/cmsDetail",
+			"style": {
+				"navigationBarTitleText": "文章详情",
+				"navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+				// "navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/login/change",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+				// "navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": true
+				// "navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/order/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+				// "navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/my/mySetting",
+			"style": {
+				"navigationBarTitleText": "设置"
+				// "navigationStyle":"custom"
+			}
+		},{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+				// "navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/enroll/enrollDetail",
+			"style": {
+				"navigationBarTitleText": "活动详情",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				},
+				"h5": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/enroll/enrollStep",
+			"style": {
+				"navigationBarTitleText": "报名",
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/enroll/enrollStepMatch",
+			"style": {
+				"navigationBarTitleText": "报名",
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/enroll/enrollStep11",
+			"style": {
+				"navigationBarTitleText": "报名",
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/enroll/enrollNor",
+			"style": {
+				"navigationBarTitleText": "报名",
+				"navigationStyle":"custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		
+		{
+			"path": "pages/enroll/enrollWord",
+			"style": {
+				"navigationBarTitleText": "团体报名",
+				"navigationStyle":"custom"
+				
+			}
+		},
+		{
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "选择支付方式"
+			}
+		},
+		{
+			"path" : "pages/pay/apply",
+			"style" : {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/minipay/minipay",
+			"style" : {
+				"navigationBarTitleText": ""
+			}
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "联合竞速",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#FFFFFF"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

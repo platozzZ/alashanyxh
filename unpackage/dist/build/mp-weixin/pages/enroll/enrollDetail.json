@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "活动详情",
+  "usingComponents": {
+    "uni-grid": "/components/uni-grid/uni-grid",
+    "uni-grid-item": "/components/uni-grid-item/uni-grid-item",
+    "uni-countdown": "/components/uni-countdown/uni-countdown",
+    "p-tab": "/components/p-tab/p-tab",
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "sd-tabbar": "/components/sd-tabbar/sd-tabbar",
+    "avatar": "/components/yq-avatar/yq-avatar"
+  }
+}

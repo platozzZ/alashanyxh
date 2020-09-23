@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "报名",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "nor-step-1": "/components/nor-step-1/nor-step-1",
+    "nor-step-2": "/components/nor-step-2/nor-step-2",
+    "nor-step-3": "/components/nor-step-3/nor-step-3"
+  }
+}

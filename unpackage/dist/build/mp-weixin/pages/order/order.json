@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订单",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "esay-loadimage": "/components/esay-loadimage/esay-loadimage",
+    "uni-load-more": "/components/uni-load-more/uni-load-more"
+  }
+}

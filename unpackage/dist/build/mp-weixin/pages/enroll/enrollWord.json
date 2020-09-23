@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "团体报名",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "l-file": "/components/l-file/l-file",
+    "attachment": "/components/jin-attachment/jin-attachment"
+  }
+}

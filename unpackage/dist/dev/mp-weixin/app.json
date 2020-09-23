@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/enter/enter",
+    "pages/enroll/enroll",
+    "pages/mall/mall",
+    "pages/my/my",
+    "pages/index/cmsDetail",
+    "pages/login/login",
+    "pages/login/change",
+    "pages/order/order",
+    "pages/order/orderDetail",
+    "pages/my/mySetting",
+    "pages/login/register",
+    "pages/enroll/enrollDetail",
+    "pages/enroll/enrollStep",
+    "pages/enroll/enrollStepMatch",
+    "pages/enroll/enrollStep11",
+    "pages/enroll/enrollNor",
+    "pages/enroll/enrollWord",
+    "pages/pay/pay",
+    "pages/pay/apply",
+    "pages/minipay/minipay"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "联合竞速",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#FFFFFF"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap69.json"
+}

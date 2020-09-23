@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "p-number-box": "/components/p-number-box/p-number-box"
+  },
+  "component": true
+}

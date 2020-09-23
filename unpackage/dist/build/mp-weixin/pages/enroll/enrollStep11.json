@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "报名",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "enroll-step11-1": "/components/enroll-step11-1/enroll-step11-1",
+    "enroll-step11-2": "/components/enroll-step11-2/enroll-step11-2",
+    "enroll-step11-3": "/components/enroll-step11-3/enroll-step11-3"
+  }
+}

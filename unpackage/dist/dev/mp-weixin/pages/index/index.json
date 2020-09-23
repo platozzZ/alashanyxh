@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "cms-item": "/components/cms-item/cms-item",
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "sd-tabbar": "/components/sd-tabbar/sd-tabbar",
+    "media-item": "/pages/index/news-item"
+  }
+}

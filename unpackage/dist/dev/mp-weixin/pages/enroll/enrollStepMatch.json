@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "报名",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "match-step-1": "/components/match-step-1/match-step-1",
+    "match-step-2": "/components/match-step-2/match-step-2",
+    "match-step-3": "/components/match-step-3/match-step-3",
+    "match-step-4": "/components/match-step-4/match-step-4"
+  }
+}

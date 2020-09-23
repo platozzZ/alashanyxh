@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.enrollDetail {
+  padding-top: 620rpx;
+}
+.enrollDetail .banner {
+  width: 100%;
+  height: 732rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #ccc;
+}
+.enrollDetail .banner .banner-img {
+  width: 100%;
+  height: 100%;
+}
+.enrollDetail .con {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.enrollDetail .con .container.en-first {
+  border-radius: 40rpx 40rpx 0 0;
+  box-shadow: 0 2px 4px 0 rgba(218, 218, 218, 0.5);
+}
+.enrollDetail .con .container.en-first .title {
+  line-height: 1.3;
+}
+.enrollDetail .con .container.en-first .info .innfo-avatar {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 100%;
+}
+.enrollDetail .con .container.en-first .tag {
+  color: #494548;
+}
+.enrollDetail .con .container.en-first .tag .cu-tag {
+  margin-bottom: 10rpx;
+}
+.enrollDetail .con .about .image {
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 100%;
+}
+.enrollDetail .con .overview .ov-con .ov-con-chart {
+  border-radius: 16rpx;
+  border: 1rpx solid #c7c7c7;
+  width: 100%;
+}
+.enrollDetail .con .overview .ov-con .ov-con-chart .ov-con-txt .label {
+  width: 120rpx;
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: justify;
+  vertical-align: top;
+  color: #a3a3a3;
+  position: relative;
+}
+.enrollDetail .con .overview .ov-con .ov-con-chart .ov-con-txt .label::after {
+  display: inline-block;
+  width: 100%;
+  content: '';
+  height: 0;
+}
+.enrollDetail .con .overview .ov-con .time {
+  width: 100%;
+  color: #a3a3a3;
+}
+.enrollDetail .con .record .record-con .record-con-list .record-con-item {
+  width: 25%;
+}
+.enrollDetail .con .location map {
+  width: 100%;
+  height: 382rpx;
+  border-radius: 12rpx;
+  border: 1rpx solid #C7C7C7;
+}
+.enrollDetail .con .comments .cu-list .cu-item {
+  padding: 30rpx 30rpx 30rpx 102rpx;
+}
+.enrollDetail .con .comments .cu-list .cu-item::after {
+  display: none;
+}
+.enrollDetail .con .comments .cu-list .cu-item .cu-avatar {
+  width: 52rpx;
+  height: 52rpx;
+}
+.enrollDetail .con .comments .cu-list .cu-item .content .comment-zan {
+  height: 28rpx;
+  line-height: 28rpx;
+}
+.enrollDetail .con .comments .cu-list .cu-item .content .comment-zan .comment-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+.enrollDetail .footer {
+  height: calc(246rpx + constant(safe-area-inset-bottom) / 2);
+  height: calc(246rpx + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(constant(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.enrollDetail .footer .cu-bar {
+  height: calc(246rpx + constant(safe-area-inset-bottom) / 2);
+  height: calc(246rpx + env(safe-area-inset-bottom) / 2);
+  z-index: 3;
+}
+.enrollDetail .footer .cu-bar .footer-innput .footer-innput-input {
+  width: 100%;
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #EEEEEE;
+  border-radius: 36rpx;
+  color: #878787;
+}
+.enrollDetail .footer .cu-bar .footer-bot {
+  height: 120rpx;
+  background: #F5F5F5;
+}
+.enrollDetail .footer .cu-bar .footer-bot .footer-price {
+  width: 300rpx;
+  height: 120rpx;
+}
+.enrollDetail .footer .cu-bar .footer-bot .footer-btn {
+  height: 100%;
+}
+.enrollDetail .pop-comment textarea {
+  background: #EEEEEE;
+  padding: 20rpx;
+  margin: 0;
+  height: 180rpx;
+  border-radius: 4rpx;
+}
+.enrollDetail .hr {
+  width: 100%;
+  height: 16rpx;
+  background-color: #f1f1f1;
+}
+

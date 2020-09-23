@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "self-inputorder2-addcar": "/components/self-inputorder2-addcar/self-inputorder2-addcar"
+  },
+  "component": true
+}

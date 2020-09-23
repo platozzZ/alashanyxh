@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "报名",
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "self-inputorder2-1": "/components/self-inputorder2-1/self-inputorder2-1",
+    "self-inputorder2-2": "/components/self-inputorder2-2/self-inputorder2-2",
+    "self-inputorder2-3": "/components/self-inputorder2-3/self-inputorder2-3",
+    "self-inputorder2-4": "/components/self-inputorder2-4/self-inputorder2-4"
+  }
+}
