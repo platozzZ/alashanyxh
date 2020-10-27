@@ -56,6 +56,22 @@ export function getMatchInfo(data) {
 		data: data
     })
 }
+// 获取赛事与你相伴分组信息 /Gokart/getgroup
+export function getRacerGroup(data) {
+    return enroll.request({
+        url: '/Gokart/getgroup',
+        method: 'POST',
+		data: data
+    })
+}
+// 获取赛事与你相伴人员信息 /match/racerList
+export function getRacerList(data) {
+    return enroll.request({
+        url: '/Gokart/racerList',
+        method: 'POST',
+		data: data
+    })
+}
 // 获取场地详情 /Gokart/fieldinfo
 export function getFieldInfo(data) {
     return enroll.request({

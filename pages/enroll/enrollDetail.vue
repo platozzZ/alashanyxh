@@ -20,11 +20,20 @@
 				</view>
 			</view>
 			<view class=" about bg-white" v-if="art.RacerTop.length > 0">
-				<view class="title text-xl text-black padding-top-xl padding-bottom-xs padding-lr">与您相伴</view>
+				<view class="title text-xl text-black padding-top-xl padding-bottom-xs padding-lr  flex align-center justify-between">与您相伴
+					<view class="flex align-center justify-center text-gray" @click="toAll" v-if="art.RacerTop.length <= 20">全部 <text class="cuIcon-right"></text> </view>
+				</view>
 				<view class="padding-lr-xs padding-bottom-lg">
 					<uni-grid :column="7" :show-border="false">
 						<uni-grid-item v-for="(item, index) in art.RacerTop" :index="index" :key="item.plato_id">
-							<view class="grid-item-box flex-sub flex align-center justify-center"><image class="image" :src="test"></image></view>
+							<view class="grid-item-box flex-sub flex align-center justify-center"><image class="image" :src="item.avatar"></image></view>
+						</uni-grid-item>
+						<uni-grid-item v-if="art.RacerTop.length > 20">
+							<view class="grid-item-box flex-sub flex align-center justify-center">
+								<view class="about-more flex align-center justify-center" @click="toAll">
+									<text class="cuIcon-more"></text>
+								</view>
+							</view>
 						</uni-grid-item>
 					</uni-grid>
 				</view>
@@ -216,7 +225,7 @@ export default {
 			list: [],
 			status: 'more',
 			current: 0,
-			// mid: '',
+			mid: '',
 			tabItem: [],
 			tabContent: [],
 			popType: 'bottom',
@@ -237,10 +246,12 @@ export default {
 	onLoad(option) {
 		that = this;
 		that.commentData.obj_id = option.id
+		that.mid = option.id
 		uni.setStorageSync('enrollMid',option.id)
 		console.log(that.commentData);
 		let data = {
-			mid: option.id
+			mid: option.id,
+			num: 20
 		}
 		that.getMatchInfo(data);
 		that.initValidate()
@@ -447,6 +458,11 @@ export default {
 			    that.popFocus = e.show;  
 			});  
 		},
+		toAll(){
+			uni.navigateTo({
+				url: './enrollDetailAbout?id=' + that.mid
+			})
+		},
 		showToast(e) {
 			uni.showToast({
 				title: e,
@@ -610,6 +626,12 @@ export default {
 			}
 		}
 		.about {
+			.about-more{
+				width: 74rpx;
+				height: 74rpx;
+				border-radius: 100%;
+				background-color: #F5F5F5;
+			}
 			.image {
 				width: 74rpx;
 				height: 74rpx;

@@ -44,7 +44,7 @@
 			{{this_url}}
 		</view> -->
 		<!-- 广告图 -->
-		<view class="p-adv padding bg-white" @click="_navigateTo('../team/team')" style="display: none;" v-if="!!art && art.ad"><image class="" :src="art.ad.img_url"></image></view>
+		<view class="p-adv padding bg-white" @click="toWebview('./webview',art.ad.url)" v-if="!!art && art.ad"><image class="" :src="art.ad.img_url" mode="widthFix"></image></view>
 		<!-- 赛事广告 -->
 		<view class="p-adv-ss bg-white" v-if="!!art && art.match.length > 0">
 			<view class="cu-card">
@@ -497,6 +497,17 @@ export default {
 				url: url + '?id=' + id
 			})
 		},
+		toWebview(url,weburl){
+			console.log(url)
+			console.log(weburl)
+			let webUrl = encodeURIComponent(weburl)
+			// let webUrl1 = decodeURIComponent(weburl)
+			console.log(webUrl)
+			// console.log(webUrl1)
+			uni.navigateTo({
+				url: url + '?webUrl=' + webUrl
+			})
+		},
 		
 	},
 	onShareAppMessage(res) {
@@ -584,7 +595,7 @@ export default {
 	.p-adv {
 		image {
 			width: 100%;
-			height: 74rpx;
+			height: auto;
 			border-radius: 10rpx;
 			display: block;
 		}
