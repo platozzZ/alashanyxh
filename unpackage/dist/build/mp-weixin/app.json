@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/webview",
     "pages/enter/enter",
     "pages/enroll/enroll",
     "pages/mall/mall",

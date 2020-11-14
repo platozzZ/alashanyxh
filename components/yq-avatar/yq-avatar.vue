@@ -1279,7 +1279,7 @@
 				// #endif
 			},
 			btop(base64) {
-				// console.log(base64);
+				console.log(base64);
 				this.base64 = base64;
 				return new Promise(function(resolve, reject) {
 					var arr = base64.split(','),

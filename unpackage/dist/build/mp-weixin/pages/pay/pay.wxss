@@ -1,1 +1,1 @@
-.pay .pay-radio .cu-form-group .title .pay-logo{width:46rpx;height:46rpx}.pay .pay-footer{width:100%;height:calc(100rpx + env(safe-area-inset-bottom) / 2)}.pay .pay-footer .pay-foot{position:fixed;bottom:0;left:0;border-radius:0;width:100%;height:100rpx}
+.pay .pay-radio .cu-form-group .title .pay-logo{width:46rpx;height:46rpx}.pay .pay-footer{width:100%;height:calc(100rpx + env(safe-area-inset-bottom) / 2)}.pay .pay-footer .pay-foot{position:fixed;bottom:0;left:0;-webkit-border-radius:0;border-radius:0;width:100%;height:100rpx}

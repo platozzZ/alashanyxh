@@ -1,1 +1,1 @@
-.orderDetail .bg{background-color:#3b3b3b;color:#fff}.orderDetail .bg .order-content .logo{width:128rpx;height:128rpx;border-radius:100%}.orderDetail .bg .order-content .content .title{font-weight:600}.orderDetail .bg .order-content .content .item{font-size:30rpx}
+.orderDetail .bg{background-color:#3b3b3b;color:#fff}.orderDetail .bg .order-content .logo{width:128rpx;height:128rpx;-webkit-border-radius:100%;border-radius:100%}.orderDetail .bg .order-content .content .title{font-weight:600}.orderDetail .bg .order-content .content .item{font-size:30rpx}
